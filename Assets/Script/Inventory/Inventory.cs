@@ -7,6 +7,12 @@ public class Inventory : MonoBehaviour
     List<ItemIndex> items;
 
     [SerializeField] Item item;
+    [SerializeField] private int draw;
+    public int Draw// 카드 드로우 
+    {
+        get { return draw; }
+        set { Draw = value; }
+    }
 
     public Cell[] cells;
 
@@ -65,7 +71,7 @@ public class Inventory : MonoBehaviour
 
             yield return new WaitForSeconds(2);
 
-            Destroy(cells[items[0].Index].transform.GetChild(0).gameObject);
+
             items.RemoveAt(0);
         }
     }

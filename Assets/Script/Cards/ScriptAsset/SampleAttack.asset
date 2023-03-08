@@ -15,5 +15,6 @@ MonoBehaviour:
   cardName: Sample Attack
   damage: 5
   defense: 0
+  durability: 0
   grade: 1
   sprite: {fileID: 21300000, guid: 56befe5e4880e5e44b0cb703d8ca99a3, type: 3}
